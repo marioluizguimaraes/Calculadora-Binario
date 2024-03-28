@@ -19,11 +19,12 @@ for i in numeroBinario2:
         print("Dígito inválido:", i)
         quit()
 
+if (tamanhob1 <= tamanhob2):
+    for tamanho in numeroBinario1:
+        numeroBinario1.extend(['0'])
+        print(numeroBinario1)
 
 
-
-
-valores = []
 
 
 
