@@ -19,10 +19,11 @@ for i in numeroBinario2:
         print("Dígito inválido:", i)
         quit()
 
-if (tamanhob1 <= tamanhob2):
-    for tamanho in numeroBinario1:
-        numeroBinario1.extend(['0'])
-        print(numeroBinario1)
+if (tamanhob1 < tamanhob2):
+    for tamanhob1 in range(tamanhob2 - tamanhob1):
+        numeroBinario1.insert(0, 0)
+
+print(numeroBinario1)
 
 
 
