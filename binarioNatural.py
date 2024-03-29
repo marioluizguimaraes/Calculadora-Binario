@@ -9,20 +9,27 @@ tamanho = len(numeroBinario)
 
 valores = []
 
-# Verifica se os dígitos correspondem a 0 ou 1
+# Ler cada intem da lista por vez
 for i in numeroBinario:
+    # Verifica se o item da vez é 0 ou 1
     if i != 0 and i != 1:
         print("Dígito inválido:", i)
         quit()
 
 casadavez = 0
-# Calcula os valores relacionados ao número binário em cada casa
+
+# Ler cada intem da lista por vez
 for n in numeroBinario:
+   
+    # Calcula os valores relacionados ao número binário em cada casa
     casadavez += 1
     valor = n * (2 ** (tamanho - casadavez))
+
+    # append() adicional um item ao final da lista
     valores.append(valor)
 
 resultado = sum(valores)
+
 
 print("O valor em binário tem", tamanho, "Bits.")
 print("Resultado em decimal:", resultado)
