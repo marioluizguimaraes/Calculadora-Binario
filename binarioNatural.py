@@ -1,8 +1,6 @@
-print("Escreva abaixo um valor em binário!")
 
 # Comando responsável por guardar cada dígito do input em um Lista/vetor[i] e converter cada valor para inteiro
-
-numeroBinario = list(map(int, input()))
+numeroBinario = list(map(int, input("Escreva abaixo um valor em binário!")))
 
 # Guarda o número de elementos presentes no vetor através da função len(vetor)
 tamanho = len(numeroBinario)
